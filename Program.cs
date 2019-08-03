@@ -1,12 +1,17 @@
 ﻿using System;
 
-namespace flower_shop
+namespace FlowerShop
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            FlowerShop myShop = new FlowerShop();
+
+            myShop.MothersDayArrangement.ForEach(arr =>
+            {
+                arr.Describe();
+            });
         }
     }
 }
